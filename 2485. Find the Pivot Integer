@@ -1,0 +1,8 @@
+class Solution {
+    public int pivotInteger(int n) {
+        long sum = (long) n * (n + 1) / 2;
+        long x = (long) Math.sqrt(sum);
+        if (x * x == sum) return (int) x;
+        return -1;
+    }
+}
